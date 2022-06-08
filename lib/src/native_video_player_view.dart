@@ -37,9 +37,11 @@ class _NativeVideoPlayerViewState extends State<NativeVideoPlayerView> {
   @override
   Widget build(BuildContext context) {
     /// RepaintBoundary is a widget that isolates repaints
-    return RepaintBoundary(
-      child: _buildNativeView(),
-    );
+    // return RepaintBoundary(
+    //   child: _buildNativeView(),
+    // );
+
+    return _buildNativeView();
   }
 
   Widget _buildNativeView() {
